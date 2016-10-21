@@ -1,0 +1,27 @@
+<html>
+
+<body>
+<div class="col-sn-10 col-sn-offset-1">
+<div class="row"></div>
+    <div class="row">
+        <table>
+            <tr ng-show="incomingAnswers"><a ng-if="incomingAnswers.length >0" ng-click="setNewAnswers()">You have {{adifference}} new Questions</a></tr>
+            <tr   ng-repeat="answer in answers" ng-show="answer.question === quest.question " nop>
+                <td>{{answer.user}}<br>
+                    <strong>{{answer.date | date:'MM/dd/yyyy hh:mm'}}</strong></td>
+                <td>
+                    <br>
+
+                    <br>
+                      <b>{{answer.content}}</b></td>
+            </tr>
+        </table>
+{{quest.question}}
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

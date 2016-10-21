@@ -1,0 +1,50 @@
+/**
+ * Created by JR HARI NANDHA on 03-10-2016.
+ */
+(function(){
+    angular.module('Social',['ui.router'])
+        .config(function($stateProvider){
+
+            $stateProvider.state('signUp',{
+                url:"/signup",
+                templateUrl:"signup.html",
+                controller:"SignupController"
+            })
+                .state('success',{
+                    url:"/success",
+                    templateUrl:"index.html",
+                    controller:"SuccessController"
+                })
+                .state('main',{
+                    url:"/main",
+                    templateUrl:"../app/main/main.html",
+                    controller:"MainController"
+                })
+
+                .state('themain',{
+                    url:"/themain",
+                    templateUrl:"../app/main/themain.html",
+                    controller:"MainController"
+                })
+                .state('viewer',{
+                    url:"/view",
+                    templateUrl:"../app/main/viewer.html",
+                    controller:"MainController"
+                })
+                .state('main-text',{
+                    url:"/post",
+                    templateUrl:"../app/main/main-box.html",
+                    controller:"MainController"
+                })
+                .state('answer-main',{
+                    url:"/amain",
+                    templateUrl:"../app/main/answer-main.html",
+                    controller:"MainController"
+                })
+                .state('answer-box',{
+                    url:"/amainbox",
+                    templateUrl:"../app/main/answer-box.html",
+                    controller:"MainController"
+                })
+        })
+}());

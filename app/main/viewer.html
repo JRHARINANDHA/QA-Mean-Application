@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var ques;
+        ques = sessionStorage.getItem('question');
+        document.getElementById("aquestion").value = ques;
+    </script>
+</head>
+<body >
+<div class="col-sn-10 col-sn-offset-1">
+
+    <div class="row">
+<textarea  readonly style="font-weight:'bold;" id="aquestion"></textarea>
+        <table>
+            <tr  ng-repeat="answer in answers" ng-show="answer.question === quest.question" >
+                <td>{{answer.user}}<br>
+                    <strong>{{answer.date | date:'MM/dd/yyyy hh:mm'}}</strong></td>
+                <td>
+                    <br>
+                     <b>{{answer.content}}</b></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

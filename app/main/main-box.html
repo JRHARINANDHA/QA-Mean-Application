@@ -1,0 +1,21 @@
+<html>
+<body>
+<div class="col-sn-10 col-sn-offset-1">
+    Select a Category:
+    <form ng-controller="MainController">
+    <div class="row">
+        <select ng-model="newCategory">
+            <option ng-repeat="x in categories" value={{x}}>{{x}}</option>
+        </select>
+    </div>
+    <div class="row">
+        <textarea ng-model="newQuestion"
+                  class="form-control"
+                  placeholder="Post question and press enter"></textarea>
+    </div>
+        <input type="button" value="Submit" ng-click="sendQuestion()">
+        </form>
+
+</div>
+</body>
+</html>

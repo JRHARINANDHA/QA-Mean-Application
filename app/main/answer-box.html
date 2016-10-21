@@ -1,0 +1,21 @@
+<html>
+<script type="text/javascript">
+    var ques;
+    ques = sessionStorage.getItem('question');
+    document.getElementById("aquestion").value = ques;
+</script>
+<body>
+<form ng-controller="MainController">
+<div class="col-sn-10 col-sn-offset-1">
+    <div class="row">
+        <textarea  id="aquestion" class="form-control">kola vilugum</textarea><br><br>
+        <textarea ng-model="newAnswer"
+                  class="form-control"
+                  placeholder="Post answer and press enter"></textarea>
+    </div>
+
+</div>
+    <div><input type="button" ng-click="sendAnswer()" value="Submit"></div>
+</form>
+</body>
+</html>

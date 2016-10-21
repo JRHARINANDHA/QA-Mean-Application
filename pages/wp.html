@@ -1,0 +1,162 @@
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Social">
+<head>
+
+    <title>PSG iASK-Questions</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js">
+    </script>
+    <style>
+        body {
+            font: 13px verdana;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+
+<body background="questions.jpg"  ng-controller="MainController">
+
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">PSG</a>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="../student_home.html">Home</a></li>
+        </ul>
+
+        <ul id="nav-mobile3" class="side-nav">
+            <li><a href="#">Home</a></li>
+
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+
+<div class="container" ng-controller="MainController">
+    <div class="left">
+
+        <h5>  Select a category  </h5>
+        <h2>Categories :</h2>
+        <ul>
+            <li><a href="dbms.html">+ DBMS</a></li>
+            <li><a href="cn.html">+ Computer Networks</a></li>
+            <li><a href=ds.html>+ Data Structures</a></li>
+            <li><a href="java.html">+ Java</a></li>
+            <li><a href="c.html">+ C and C++</a></li>
+            <li><a href="php.html">+ PHP</a></li>
+            <li><a href="css.html">+ CSS</a></li>
+            <li><a href="xml.html">+ XML</a></li>
+            <li><a href="js.html">+ Java Script</a></li>
+            <li><a href="wp.html">+ Webpage development</a></li>
+            <li><a href="android.html">+ Android</a></li>
+            <li><a href="mysql.html">+ MySQL</a></li>
+            <li><a href="se.html">+ Software Engineering</a></li>
+            <li><a href="vb.html">+ Visual Basics</a></li>
+        </ul>
+
+
+
+    </div>
+
+    <div  class="right" >
+        <ul class="dropdown-content">
+            <li>wqeq</li>
+            <li>weqq</li>
+        </ul>
+        <div ng-show="!hider">
+            <a ui-sref="main-text" ng-click="hide()">click</a>
+        </div>
+        <div ui-view></div>
+
+    </div>
+
+    <div style="clear: both;"> </div>
+</div>
+
+
+
+<footer class="page-footer teal">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We as a team developed this project for the benefit of iTech students to enhance their own Engineering skills. We welcome suggestions.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                    <li><a class="white-text" href="#!"></a></li>
+                    <li><a class="white-text" href="#!"></a></li>
+                    <li><a class="white-text" href="#!"></a></li>
+                    <li><a class="white-text" href="#!"></a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Developers</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Akil Ayyappan R</a></li>
+                    <li><a class="white-text" href="#!">Hari Nandha J R</a></li>
+                    <li><a class="white-text" href="#!">Kamalan M</a></li>
+                    <li><a class="white-text" href="#!">Arvind S</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+
+</body>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/navigation/navigation-controller.js"></script>
+<script src="../app/signup/signup-controller.js">  </script>
+<script src="../app/signup/web/success-controller.js"></script>
+<script src="../app/main/main-controller.js"></script>
+</html>
+<html ng-app="Social">
+<body bgcolor="blue">
+<div class="row">
+
+    <div class="row" ng-show="!hider" ng-click="hide()">
+        <a  ui-sref="main-text">Click here to ask a Question</a>
+        <div ui-view></div>
+    </div>
+</div>
+</body>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/navigation/navigation-controller.js"></script>
+<script src="../app/signup/signup-controller.js">  </script>
+<script src="../app/signup/web/success-controller.js"></script>
+<script src="../app/main/main-controller.js"></script>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<body>
+<div class="col-sn-10 col-sn-offset-1">
+
+    <div class="row">
+        <table>
+
+            <tr ng-show="incomingQuestions"><a ng-if="incomingQuestions.length >0" ng-click="setNewQuestions()">You have {{difference}} new Questions</a></tr>
+            <tr  ng-repeat="question in questions" nop>
+                <td>{{question.user}}<br>
+                    <strong>{{question.date | date:'MM/dd/yyyy hh:mm'}}</strong></td>
+                <td>
+                    <br>
+                    <a ng-click="viewer($event,question.content)" ui-sref="viewer">  <b>{{question.content}}</b></a></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

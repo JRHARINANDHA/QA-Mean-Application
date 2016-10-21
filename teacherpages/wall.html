@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Social">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>PSG iASK-Questions</title>
+     
+        <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js">
+            </script>
+    <style>
+        body {
+            font: 13px verdana;
+            font-weight: normal;
+        }
+    </style>
+    
+    </head>
+    
+    <body background="questions.jpg">
+    
+        <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">PSG</a>
+     
+      <ul class="right hide-on-med-and-down">
+        <li><a href="teacher_home.html">Home</a></li>
+      </ul>
+      
+      <ul id="nav-mobile3" class="side-nav">
+        <li><a href="#">Home</a></li>
+        
+      </ul>
+      
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+        
+        
+        <div class="container">
+        <div class="left"> 
+    
+<h5>  Select a category  </h5>
+    <h2>Categories :</h2>
+<ul>
+<li><a href="adbms.html">+ DBMS</a></li> 
+<li><a href="acn.html">+ Computer Networks</a></li> 
+<li><a href=ads.html>+ Data Structures</a></li>
+<li><a href="ajava.html">+ Java</a></li> 
+<li><a href="ac.html">+ C and C++</a></li>
+<li><a href="aphp.html">+ PHP</a></li>
+<li><a href="acss.html">+ CSS</a></li>
+<li><a href="axml.html">+ XML</a></li>
+<li><a href="ajs.html">+ Java Script</a></li>
+<li><a href="awp.html">+ Webpage development</a></li>
+<li><a href="aandroid.html">+ Android</a></li>
+<li><a href="amysql.html">+ MySQL</a></li>
+<li><a href="ase.html">+ Software Engineering</a></li>
+<li><a href="avb.html">+ Visual Basics</a></li>
+</ul>
+
+
+
+</div>
+
+            <div  class="right" >
+                <div ng-show="!hider">
+                    <a ui-sref="themain" ng-click="hide()">Click here to view</a>
+                </div>
+                <div ui-view></div>
+
+            </div>
+
+            <div style="clear: both;"> </div>
+        </div>
+        
+        
+        
+    <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We as a team developed this project for the benefit of iTech students to enhance their own Engineering skills. We welcome suggestions.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Developers</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Akil Ayyappan R</a></li>
+            <li><a class="white-text" href="#!">Hari Nandha J R</a></li>
+            <li><a class="white-text" href="#!">Kamalan M</a></li>
+            <li><a class="white-text" href="#!">Arvind S</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      
+      </div>
+    </div>
+  </footer>
+    
+        <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+        <script src="../node_modules/angular/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+        <script src="../app/app.js"></script>
+        <script src="../app/navigation/navigation-controller.js"></script>
+        <script src="../app/signup/signup-controller.js">  </script>
+        <script src="../app/signup/web/success-controller.js"></script>
+        <script src="../app/main/main-controller.js"></script>
+    </body>
+</html>
