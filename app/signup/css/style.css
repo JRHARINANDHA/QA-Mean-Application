@@ -42,7 +42,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px 20px;
-  color: #ffffff;
+  color: #320aff;
   text-decoration: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -160,7 +160,7 @@ body {
 /* Card */
 .card {
   position: relative;
-  background: #ffffff;
+  background: #5c0011;
   border-radius: 5px;
   padding: 60px 0 40px 0;
   box-sizing: border-box;
@@ -203,7 +203,7 @@ body {
   width: 100%;
   height: 60px;
   border: 0;
-  color: #212121;
+  color: #00ecff;
   font-size: 24px;
   font-weight: 400;
 }
@@ -347,7 +347,7 @@ body {
 }
 .card.alt .toggle {
   position: relative;
-  background: #202466;
+  background: #050919;
   width: 140px;
   height: 140px;
   border-radius: 100%;

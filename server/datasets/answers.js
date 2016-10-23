@@ -5,6 +5,6 @@ module.exports = mongoose.model('Answers',{
     content: String,
     date: {type:Date , default:Date.now},
     question:String
-})/**
+});/**
  * Created by JR HARI NANDHA on 11-10-2016.
  */

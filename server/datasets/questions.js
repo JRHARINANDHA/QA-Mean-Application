@@ -5,4 +5,4 @@ module.exports = mongoose.model('Questions',{
     content: String,
     date: {type:Date , default:Date.now},
     category: String
-})
+});

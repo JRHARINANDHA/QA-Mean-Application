@@ -44,7 +44,10 @@ p {
     top: 0;
   }
 }
-
+.view{
+    font-size: x-large;
+    text-align: center;
+}
 .icon-block {
   padding: 0 15px;
 }

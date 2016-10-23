@@ -3,7 +3,7 @@
  */
 (function(){
     angular.module('Social')
-        .controller('MainController',['$scope','$http','$interval',
+        .controller('MainController',['$scope','$http','$interval','$state',
             function($scope,$http,$interval){
 
                 if(sessionStorage['question']!== undefined) {
@@ -22,7 +22,7 @@
                     $scope.quest = {
                         question:element
                     };
-
+                    if($scope.newAnswer !==undefined)
                     {
 
                         console.log("working");
@@ -36,6 +36,7 @@
                             console.log(response);
                             alert("Your answer has been submitted");
                             $scope.answers = response;
+                            window.open("http://localhost:3000/teacherpages/wall.html", "_self");
                         }).error(function(error){
                             console.error(error);
                         })
@@ -43,7 +44,7 @@
                 };
 
                 $scope.sendQuestion = function(){
-
+                    if($scope.newQuestion !== undefined)
                     {
                         console.log("working");
                         var request = {
@@ -56,6 +57,7 @@
                             console.log(response);
                             alert("Your question has been submitted");
                             $scope.questions = response;
+                            window.open("http://localhost:3000/pages/wall.html", "_self");
                         }).error(function(error){
                             console.error(error);
                         })

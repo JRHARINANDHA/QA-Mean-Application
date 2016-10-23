@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -6,7 +6,8 @@ and open the template in the editor.
 -->
 <html ng-app="Social">
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>PSG iASK-Questions</title>
 
     <!-- CSS  -->
@@ -27,7 +28,7 @@ and open the template in the editor.
 
 </head>
 
-<body background="questions.jpg"  ng-controller="MainController">
+<body background="questions.jpg" >
 
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -48,37 +49,14 @@ and open the template in the editor.
 
 
 <div class="container" ng-controller="MainController">
-    <div class="left">
-
-        <h5>  Select a category  </h5>
-        <h2>Categories :</h2>
-        <ul>
-            <li><a href="adbms.html">+ DBMS</a></li>
-            <li><a href="acn.html">+ Computer Networks</a></li>
-            <li><a href=ads.html>+ Data Structures</a></li>
-            <li><a href="ajava.html">+ Java</a></li>
-            <li><a href="ac.html">+ C and C++</a></li>
-            <li><a href="aphp.html">+ PHP</a></li>
-            <li><a href="acss.html">+ CSS</a></li>
-            <li><a href="axml.html">+ XML</a></li>
-            <li><a href="ajs.html">+ Java Script</a></li>
-            <li><a href="awp.html">+ Webpage development</a></li>
-            <li><a href="aandroid.html">+ Android</a></li>
-            <li><a href="amysql.html">+ MySQL</a></li>
-            <li><a href="ase.html">+ Software Engineering</a></li>
-            <li><a href="avb.html">+ Visual Basics</a></li>
-        </ul>
 
 
-
-    </div>
-
-    <div  class="right" >
+    <div  class="view" >
         <div ng-show="!hider">
             <a ui-sref="main" ng-click="hide()">Click here to view questions</a>
         </div>
         <div ui-view></div>
-
+        <br><br><br><br><br><br><br><br><br>
     </div>
 
     <div style="clear: both;"> </div>

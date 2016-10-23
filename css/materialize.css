@@ -2231,7 +2231,9 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
 /**
  * Remove default margin.
  */
@@ -2878,7 +2880,6 @@ ul.staggered-list li {
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
 }
-
 /*********************
   Media Query Classes
 **********************/
@@ -2952,6 +2953,7 @@ footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ee6e73;
+
 }
 
 footer.page-footer .footer-copyright {
@@ -8458,4 +8460,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+.right{
+    text-align: right;
 }

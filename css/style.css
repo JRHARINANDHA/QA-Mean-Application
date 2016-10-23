@@ -29,6 +29,10 @@ p {
     width: 100%;
   }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -54,4 +58,12 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
 }

@@ -10,22 +10,28 @@
             }
 
             $scope.userLogIn = function(){
+                if ($scope.login.email !== undefined && $scope.login.password !== undefined) {
+                    if ($scope.login.email.charAt(0) === "I" && $scope.login.email.charAt(1) === "O") {
+                        $http.post('../../api/user/login', $scope.login).success(function (response) {
 
-                $http.post('../../api/user/login',$scope.login).success(function(response){
-                   localStorage.setItem('User-Data',JSON.stringify(response));
-                    window.open("http://localhost:3000/student_home.html","_self");
-                }).error(function(error){
-                    console.error(error);
-                });
-            }
-            $scope.expLogIn = function(){
+                            localStorage.setItem('User-Data', JSON.stringify(response));
+                            window.open("http://localhost:3000/teacherpages/teacher_home.html", "_self");
 
-                $http.post('../../api/user/login',$scope.login).success(function(response){
-                    localStorage.setItem('User-Data',JSON.stringify(response));
-                    window.open("http://localhost:3000/teacherpages/teacher_home.html","_self");
-                }).error(function(error){
-                    console.error(error);
-                });
-            }
+                        }).error(function (error) {
+                            console.error(error);
+                        });
+                    }
+                    else {
+                        $http.post('../../api/user/login', $scope.login).success(function (response) {
+
+                            localStorage.setItem('User-Data', JSON.stringify(response));
+                            window.open("http://localhost:3000/student_home.html", "_self");
+
+                        }).error(function (error) {
+                            console.error(error);
+                        });
+                    }
+                }
+            };
         }]);
 }());
